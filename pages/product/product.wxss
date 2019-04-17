@@ -1,0 +1,63 @@
+/* pages/product/product.wxss */
+.page_style{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.head{
+  height: 280rpx;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start; */
+}
+.head_image{
+  height: 280rpx;
+  width: 100%;
+  position: absolute
+}
+.head_act{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: absolute;
+  top: 200rpx;
+}
+.head_act_view{
+  width: 33.33%;
+  text-align: center
+}
+.head_act_image{
+  height: 35rpx;
+  width: 180rpx;
+}
+
+.menu{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 302rpx;
+  background:rgba(255,255,255,0.6997);
+  padding: 54rpx 0 23rpx 0;
+}
+.myOrder{
+  flex: 1;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.myOrder>image{
+  margin: 0 auto;
+  display: block; 
+}
+.myOrder>image{
+  width: 64rpx;
+  height: 64rpx;
+}
+.myOrder>view{
+  padding-top: 22rpx;
+  color: #0D0D0D;
+  font-size: 26rpx;
+}

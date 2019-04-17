@@ -1,0 +1,54 @@
+<!--pages/home/home.wxml-->
+<view class="page">
+  <!-- <text>pages/home/home.wxml</text> -->
+  <!-- <navigator url='banner/banner'> -->
+
+  <view class="page__hd">
+    <view class="page__title"></view>
+  </view>
+
+  <view class="page-section page-section-spacing swiper">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <!-- <view class="swiper-item {{item}}"></view> -->
+          <image src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view>
+    <button class="weui-btn" type="primary" bindtap='clickBtn'>用户授权</button>
+    <navigator class="weui-btn" url='/pages/login/login'>
+      <button class="weui-btn" type="primary">用户登录</button>
+    </navigator>
+    <navigator class="weui-btn" url='/pages/regist/regist'>
+      <button class="weui-btn" type="primary">用户注册</button>
+    </navigator>
+  </view>
+    
+  <!-- <text>时间：{{time}}</text>
+  <block wx:if="{{condition}}">
+    <text>时间：{{time}}</text>
+    <text>时间：{{time}}</text>
+    <text>时间：{{time}}</text>
+  </block>
+
+  <view wx:if="{{length > 5}}"> 111111 </view>
+  <view wx:elif="{{length > 2}}"> 2 </view>
+  <view wx:else> 3 </view>
+
+  <view wx:for="{{array}}">
+    {{index}}: {{item.message}}
+  </view>
+
+  <template name="msgItem">
+  <view>
+    <text> {{index}}: {{msg}} </text>
+    <text> Time: {{time}} </text>
+  </view>
+</template> -->
+</view>
+

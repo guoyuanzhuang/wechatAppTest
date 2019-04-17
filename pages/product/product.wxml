@@ -1,0 +1,44 @@
+<!--pages/product/product.wxml-->
+<view class='page page_style'>
+  <!-- <button bindtap='startRequest' loading="{{loading}}">请求</button> -->
+  <!-- <loading hidden="{{!loading}}">加载中</loading> -->
+  <!-- <text>{{RECOMMEND_HEADER[0].imageUrl}}</text> -->
+  <view class='head'>
+    <image src='{{RECOMMEND_HEADER[0].imageUrl}}' class='head_image'></image>
+    <view class='head_act'>
+      <view class='head_act_view'>
+        <navigator url="/pages/web/web?path={{RECOMMEND_HEADER[1].linkUrl}}">
+          <image src='{{RECOMMEND_HEADER[1].imageUrl}}' class='head_act_image'></image>
+        </navigator>
+      </view>
+
+      <view class='head_act_view'>
+        <navigator url="/pages/web/web?path={{RECOMMEND_HEADER[2].linkUrl}}">
+          <image src='{{RECOMMEND_HEADER[2].imageUrl}}' class='head_act_image'></image>
+        </navigator>
+      </view>
+      
+      <view class='head_act_view'>
+        <navigator url="/pages/web/web?path={{RECOMMEND_HEADER[3].linkUrl}}">
+          <image src='{{RECOMMEND_HEADER[3].imageUrl}}' class='head_act_image'></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <view class='menu'>
+    <block class="head_block" wx:for="{{RECOMMEND_ACTIVITY}}" wx:key="id">
+      <!-- <view class='activity_item'>
+        <image src='{{item.imageUrl}}'></image>
+        <view>{{item.title}}</view>
+      </view> -->
+      <navigator url="/pages/web/web?path={{item.linkUrl}}">
+        <view class='myOrder'>
+          <image src='{{item.imageUrl}}'></image>
+          <view>{{item.title}}</view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+  
+</view>

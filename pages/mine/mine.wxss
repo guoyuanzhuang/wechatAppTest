@@ -1,0 +1,141 @@
+/* @import '../../style/base/common.wxss'; */
+page{
+  background:#F4F4F4;
+}
+.mine .top{
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: 501;
+  height: 282rpx;
+  width: 100%;
+  background:#FCA669;
+}
+.top .bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.userAvatarUrl{
+  position: absolute;
+  top: 85rpx;
+  left: 60rpx;
+  height: 110rpx;
+  width: 110rpx;
+  border-radius: 100%;
+  overflow:hidden;
+}
+.userAvatarUrl>view{
+  background: #D8D8D8;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  border:1px solid rgba(151,151,151,1);
+}
+.myDescribe{
+  margin: 80rpx 0 0 200rpx;
+  color: white;
+}
+.name{
+  font-size: 40rpx;
+}
+.my_jifen{
+  margin-top: 10rpx;
+  font-size: 26rpx;
+}
+.menu{
+  height: 160rpx;
+  margin-top: 302rpx;
+  background:rgba(255,255,255,0.6997);
+  padding: 54rpx 0 23rpx 0;
+}
+.myOrder,.myAgent,.myEvaluate,.mySeller{
+  width: 33.333%;
+  float: left;
+  text-align: center;
+}
+.myOrder>image,.myAgent>image,.myEvaluate>image,.mySeller>image{
+  margin: 0 auto;
+  display: block; 
+}
+.myOrder>image{
+  width: 64rpx;
+  height: 64rpx;
+}
+.myAgent>image{
+  width: 66rpx;
+  height: 66rpx;
+}
+.myEvaluate>image,.mySeller>image{
+  width: 68rpx;
+  height: 64rpx;
+}
+.myOrder>view,.myAgent>view,.myEvaluate>view,.mySeller>view{
+  padding-top: 22rpx;
+  color: #0D0D0D;
+  font-size: 26rpx;
+}
+.list{
+  margin-top: 20rpx;
+  background:rgba(255,255,255,0.6997);
+}
+.jifen,.kefu,.fankui,.myGoods{
+  padding-top: 27rpx;
+  font-size: 28rpx;
+  color: #0D0D0D;
+  position: relative;
+}
+.jifen>image,.kefu>image,.fankui>image,.myGoods>image{
+  position: absolute;
+}
+.jifen>image{
+  top: 27rpx;
+  left: 63rpx;
+  width: 34rpx;
+  height: 47rpx;
+}
+.kefu>image{
+  top: 26rpx;
+  left: 58rpx;
+  width: 42rpx;
+  height: 40rpx;
+}
+.fankui>image{
+  top: 29rpx;
+  left: 58rpx;
+  width: 42rpx;
+  height: 36rpx;
+}
+.myGoods>image{
+  top: 26rpx;
+  left: 61rpx;
+  width: 41rpx;
+  height: 40rpx;
+}
+.jifen>view,.kefu>view,.fankui>view,.myGoods>view{
+  margin-left: 142rpx;
+  padding-bottom: 22rpx;
+}
+.jifen>view{
+  border-bottom: 1px solid rgba(215, 215, 215, 0.32);
+}
+.myGoods>view{
+  border-bottom: 1px solid rgba(215, 215, 215, 0.32);
+}
+.kefu>view{
+  border-bottom: none;
+}
+.fankui>view{
+  border-bottom: 1px solid rgba(215, 215, 215, 0.32);
+}
+.dropOut{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background:rgba(255,255,255,0.6997);
+  color: #FFAC88;
+  text-align: center;
+}

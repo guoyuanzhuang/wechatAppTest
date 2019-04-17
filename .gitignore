@@ -1,0 +1,23 @@
+!.gitignore
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# my add configer
+.svn
+*.classpath
+*.iml
+*.bak
+*.project
+classess
+target
+.settings
+*.log
+ehcache
+*.ppk
+.idea
+.DS_Store
+

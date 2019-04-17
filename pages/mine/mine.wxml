@@ -1,0 +1,62 @@
+<view class='mine'>
+  <view class='top'>
+    <view class='userAvatarUrl'>
+      <open-data type="userAvatarUrl" hidden='{{accountInfo}}'></open-data>
+      <view hidden='{{!accountInfo}}'></view> 
+    </view>
+    <view class='myDescribe'>
+        <view class='name' hidden='{{!accountInfo}}' bindtap='toLogin'>登录/注册</view> 
+        <view class='name' hidden='{{accountInfo}}'><open-data type="userNickName" lang="zh_CN"></open-data></view>
+        <view class='my_jifen' hidden='{{accountInfo}}'>
+          我的积分：{{integralValue}}
+        </view>
+      </view>
+  </view>
+  <view class='menu'>
+    <view class='myOrder' bindtap=''>
+      <image src='./images/myOrder.png' ></image>
+      <view>我的订单</view>
+    </view>
+    <view class='myAgent' bindtap=''>
+      <image src='./images/myAgent.png' ></image>
+      <view>我的代购</view>
+    </view>
+    <view class='myEvaluate' bindtap=''>
+      <image src='./images/myEvaluate.png'></image>
+      <view>待我评价</view>
+    </view>
+    <!-- <view class='mySeller' bindtap=''>
+      <image src='./images/myEvaluate.png'></image>
+      <view>客户订单</view>
+    </view> -->
+  </view>
+  <view class='list'>
+    <view class='jifen' bindtap=''>
+      <image src='./images/jifen.png'></image>
+      <view>
+        我的积分
+      </view>
+    </view>
+    <view class='myGoods' bindtap='' hidden='{{seller}}'>
+      <image src='./images/myGoods.png'></image>
+      <view>
+        我的商品
+      </view>
+    </view>
+    <view class='fankui' bindtap=''>
+      <image src='./images/fankui.png'></image>
+      <view>
+        意见反馈
+      </view>
+      </view>
+    <view class='kefu' bindtap=''>
+     <image src='./images/kefu.png'></image>
+      <view>
+        联系客服
+      </view>
+    </view>
+    </view>
+  <view class='dropOut' bindtap='' hidden='{{accountInfo}}'>
+    账户退出
+  </view>
+</view>
